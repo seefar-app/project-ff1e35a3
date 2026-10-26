@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "MY MIB",
+    "slug": "project-ff1e35a3",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "mymib",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.mymib.app",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "MY MIB utilise Face ID pour déverrouiller votre espace financier."
+      }
+    },
+    "android": {
+      "package": "com.mymib.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#f5f6fa"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": ["expo-router", "expo-secure-store", "expo-local-authentication"],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}

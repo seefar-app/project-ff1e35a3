@@ -1,0 +1,941 @@
+{
+  "version": 2,
+  "architecture": {
+    "framework": "Expo (React Native)",
+    "sdkVersion": "~57.0.28",
+    "navigation": "tabs",
+    "styling": "NativeWind (Tailwind CSS)",
+    "stateManagement": "Zustand + React Query"
+  },
+  "files": {
+    "app.json": {
+      "description": "json file",
+      "hash": "cd54f734d2a6342998b9aa3a65493fe3d2a1d66e",
+      "describedHash": "cd54f734d2a6342998b9aa3a65493fe3d2a1d66e",
+      "analyzedHash": "cd54f734d2a6342998b9aa3a65493fe3d2a1d66e",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:17.723Z"
+    },
+    "app/_layout.tsx": {
+      "description": "Root layout: initializes auth, loads data, redirects between auth and tab screens, and shows a loading state.",
+      "hash": "eafa489412d5143389a37b8ba072a6f39ef42bc8",
+      "describedHash": "eafa489412d5143389a37b8ba072a6f39ef42bc8",
+      "analyzedHash": "eafa489412d5143389a37b8ba072a6f39ef42bc8",
+      "source": "llm",
+      "exports": [
+        "RootLayout"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "MY MIB"
+      ],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/(auth)/_layout.tsx": {
+      "description": "Stack layout for the authentication screens with headers hidden and themed background.",
+      "hash": "9a7f00a8c72e3e6c000c820ed5eb0ab45db405b1",
+      "describedHash": "9a7f00a8c72e3e6c000c820ed5eb0ab45db405b1",
+      "analyzedHash": "9a7f00a8c72e3e6c000c820ed5eb0ab45db405b1",
+      "source": "llm",
+      "exports": [
+        "AuthLayout"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/(auth)/login.tsx": {
+      "description": "Login screen with email/password fields and optional biometric unlock before signing in.",
+      "hash": "e6a913d72c5f47196f20887c2bc1afd768b12f04",
+      "describedHash": "e6a913d72c5f47196f20887c2bc1afd768b12f04",
+      "analyzedHash": "e6a913d72c5f47196f20887c2bc1afd768b12f04",
+      "source": "llm",
+      "exports": [
+        "Login"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Bon retour",
+        "Connectez-vous pour retrouver vos finances.",
+        "Adresse e-mail",
+        "vous@exemple.fr",
+        "Mot de passe",
+        "Votre mot de passe",
+        "Mot de passe oublié ?",
+        "Se connecter",
+        "Face ID / empreinte",
+        "Pas encore de compte ?",
+        "Créer un compte"
+      ],
+      "route": "/login",
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/(auth)/signup.tsx": {
+      "description": "Signup screen collecting name, email and password to create a new account.",
+      "hash": "88a85e0e81b9e2be77e953669cc5790ee854eae5",
+      "describedHash": "88a85e0e81b9e2be77e953669cc5790ee854eae5",
+      "analyzedHash": "88a85e0e81b9e2be77e953669cc5790ee854eae5",
+      "source": "llm",
+      "exports": [
+        "Signup"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Créer votre compte",
+        "Sécurisé, chiffré et conforme au RGPD.",
+        "Prénom",
+        "Camille",
+        "Nom",
+        "Laurent",
+        "Adresse e-mail",
+        "vous@exemple.fr",
+        "Mot de passe (8 caractères min.)",
+        "Choisissez un mot de passe",
+        "En continuant, vous acceptez nos conditions et consentez à …",
+        "Créer mon compte"
+      ],
+      "route": "/signup",
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/(tabs)/_layout.tsx": {
+      "description": "Tabs layout registering the four main tabs and using the floating dock as tab bar.",
+      "hash": "d205c79dfa56652c6c27365c3549e6f4c71d7782",
+      "describedHash": "d205c79dfa56652c6c27365c3549e6f4c71d7782",
+      "analyzedHash": "d205c79dfa56652c6c27365c3549e6f4c71d7782",
+      "source": "llm",
+      "exports": [
+        "TabsLayout"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/(tabs)/budget.tsx": {
+      "description": "Budget screen with tabs for envelopes, analysis, goals and subscriptions, plus budget editing.",
+      "hash": "76ae082df9bca72d3d249fa464154230efa8b645",
+      "describedHash": "76ae082df9bca72d3d249fa464154230efa8b645",
+      "analyzedHash": "76ae082df9bca72d3d249fa464154230efa8b645",
+      "source": "llm",
+      "exports": [
+        "BudgetScreen"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Budget",
+        "Janvier 2025",
+        "Dépensé ce mois",
+        "sur",
+        "alloués",
+        "Aucune enveloppe",
+        "−20 €",
+        "+20 €",
+        "Dépenses par catégorie",
+        "Top commerçants",
+        "Prochain prélèvement le",
+        "Marquer comme résilié"
+      ],
+      "route": "/budget",
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/(tabs)/index.tsx": {
+      "description": "Home dashboard showing balance summary, budgets, recent transactions, with pull-to-refresh and parallax header.",
+      "hash": "8ee61e765cca802fbcf76e201d310098f5551477",
+      "describedHash": "8ee61e765cca802fbcf76e201d310098f5551477",
+      "analyzedHash": "8ee61e765cca802fbcf76e201d310098f5551477",
+      "source": "llm",
+      "exports": [
+        "Home"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "MY MIB",
+        "· Bonjour",
+        "Chargement impossible",
+        "Patrimoine net",
+        "ce mois",
+        "Revenus",
+        "Dépenses",
+        "Enveloppes restantes",
+        "Conseils",
+        "Ignorer",
+        "Activité récente",
+        "Aucune transaction"
+      ],
+      "route": "/",
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/(tabs)/offers.tsx": {
+      "description": "Offers screen listing partner offers by category with a modal to view and activate one.",
+      "hash": "c136906564398f8639d863c7a9859cf581dc899c",
+      "describedHash": "c136906564398f8639d863c7a9859cf581dc899c",
+      "analyzedHash": "c136906564398f8639d863c7a9859cf581dc899c",
+      "source": "llm",
+      "exports": [
+        "OffersScreen"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Avantages",
+        "Offres exclusives de nos partenaires",
+        "Économies estimées",
+        "Cashback en attente",
+        "Cashback crédité",
+        "Pour vous",
+        "Aucune offre",
+        "Exclusif",
+        "Économie estimée",
+        "Expire le",
+        "Votre code",
+        "Activer l'offre"
+      ],
+      "route": "/offers",
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/(tabs)/profile.tsx": {
+      "description": "Profile screen showing user info, settings rows, and logout action.",
+      "hash": "7c330625cca314681ef558cc388c809f723f730a",
+      "describedHash": "7c330625cca314681ef558cc388c809f723f730a",
+      "analyzedHash": "7c330625cca314681ef558cc388c809f723f730a",
+      "source": "llm",
+      "exports": [
+        "Profile"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "MY MIB Plus",
+        "Prévisions illimitées, export PDF, mode entreprise · 4,99 €…",
+        "Passer à Plus",
+        "Comptes connectés",
+        "Notifications",
+        "Sécurité et confidentialité",
+        "Déverrouillage biométrique",
+        "Authentification à deux facteurs",
+        "Entreprise",
+        "Exporter mes données (CSV / PDF)",
+        "Exporter mes données",
+        "Supprimer mon compte"
+      ],
+      "route": "/profile",
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/goal/[id].tsx": {
+      "description": "Goal detail screen showing progress chart, remaining amount, and contribution actions for one goal.",
+      "hash": "8aabadd73b0ab89e71756a4f8b1f463fcdfa5d5f",
+      "describedHash": "8aabadd73b0ab89e71756a4f8b1f463fcdfa5d5f",
+      "analyzedHash": "8aabadd73b0ab89e71756a4f8b1f463fcdfa5d5f",
+      "source": "llm",
+      "exports": [
+        "GoalDetail"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Objectif introuvable",
+        "sur",
+        "· échéance",
+        "Reste à épargner",
+        "Suggestion :",
+        "/mois pendant",
+        "mois",
+        "Prévision de trésorerie",
+        "Aucun solde bas prévu sur les 90 prochains jours",
+        "Verser 50 €",
+        "Félicitations ! Vous avez atteint cet objectif."
+      ],
+      "route": "/goal/[id]",
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/index.tsx": {
+      "description": "Onboarding carousel introducing the app and letting the user choose a profile type.",
+      "hash": "728fb8f2a4ae3f62f8ca33811dc31134f0aec183",
+      "describedHash": "728fb8f2a4ae3f62f8ca33811dc31134f0aec183",
+      "analyzedHash": "728fb8f2a4ae3f62f8ca33811dc31134f0aec183",
+      "source": "llm",
+      "exports": [
+        "Onboarding"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "MY MIB",
+        "Connexion",
+        "Total net",
+        "+3 651 € ce mois-ci",
+        "Quel est votre profil ?",
+        "Nous adaptons les outils à votre situation.",
+        "Votre revenu mensuel",
+        "Estimation nette. Vous pourrez la modifier plus tard.",
+        "Revenu mensuel",
+        "Enveloppes initiales : Logement, Alimentation, Transport, L…",
+        "Créer mon compte"
+      ],
+      "route": "/",
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "app/transaction/[id].tsx": {
+      "description": "Transaction detail screen showing an operation's info, status, and category editing.",
+      "hash": "0be28cda7f429163b01e796e0c86c61225ae2a46",
+      "describedHash": "0be28cda7f429163b01e796e0c86c61225ae2a46",
+      "analyzedHash": "0be28cda7f429163b01e796e0c86c61225ae2a46",
+      "source": "llm",
+      "exports": [
+        "TransactionDetail"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Transaction introuvable",
+        "Changer de catégorie",
+        "Joindre un reçu",
+        "Fermer"
+      ],
+      "route": "/transaction/[id]",
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "assets/adaptive-icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.014Z"
+    },
+    "assets/favicon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.014Z"
+    },
+    "assets/icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.015Z"
+    },
+    "assets/images/adaptive-icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.018Z"
+    },
+    "assets/images/favicon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.020Z"
+    },
+    "assets/images/icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.021Z"
+    },
+    "assets/images/splash-icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.022Z"
+    },
+    "assets/splash-icon.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.022Z"
+    },
+    "assets/splash.png": {
+      "description": "png file",
+      "hash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "describedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "analyzedHash": "4a5eb7171b58e08a6881721e3b43d5a44419a2be",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.023Z"
+    },
+    "components/motion/CountUp.tsx": {
+      "description": "Animated number component that counts up to a value and formats it for display.",
+      "hash": "187fb7f819a3e2484651eebd35b5706ef4b38db7",
+      "describedHash": "187fb7f819a3e2484651eebd35b5706ef4b38db7",
+      "analyzedHash": "187fb7f819a3e2484651eebd35b5706ef4b38db7",
+      "source": "llm",
+      "exports": [
+        "CountUp"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/motion/FadeInView.tsx": {
+      "description": "Wrapper component that fades and slides its children in on mount.",
+      "hash": "f3c7a6ec5426bbb4c67266a458a57b35f20e5ade",
+      "describedHash": "f3c7a6ec5426bbb4c67266a458a57b35f20e5ade",
+      "analyzedHash": "f3c7a6ec5426bbb4c67266a458a57b35f20e5ade",
+      "source": "llm",
+      "exports": [
+        "FadeInView"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/motion/ParallaxHeader.tsx": {
+      "description": "Parallax header with a scroll-driven transform and the useScrollY hook for tracking scroll.",
+      "hash": "6d6439f89df04ac623cf3004478f8c997a8132a2",
+      "describedHash": "6d6439f89df04ac623cf3004478f8c997a8132a2",
+      "analyzedHash": "6d6439f89df04ac623cf3004478f8c997a8132a2",
+      "source": "llm",
+      "exports": [
+        "useScrollY",
+        "ParallaxHeader"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/motion/PressableScale.tsx": {
+      "description": "Pressable wrapper that scales its content on press with optional haptic feedback.",
+      "hash": "33b4c475b7f7322859ba0c98e6152b35276be6e5",
+      "describedHash": "33b4c475b7f7322859ba0c98e6152b35276be6e5",
+      "analyzedHash": "33b4c475b7f7322859ba0c98e6152b35276be6e5",
+      "source": "llm",
+      "exports": [
+        "PressableScale"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/shared/AllocationChips.tsx": {
+      "description": "Horizontal scrollable row of chips showing amounts per category or envelope.",
+      "hash": "253b52b5b1b7ca361c7e15cb7de6a362606bd8eb",
+      "describedHash": "253b52b5b1b7ca361c7e15cb7de6a362606bd8eb",
+      "analyzedHash": "253b52b5b1b7ca361c7e15cb7de6a362606bd8eb",
+      "source": "llm",
+      "exports": [
+        "AllocationChips"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/shared/DeltaChip.tsx": {
+      "description": "Small colored chip showing a positive or negative percentage change with an arrow icon.",
+      "hash": "04a8e15bf5a04bf5def30d3d92272939fc99ad0e",
+      "describedHash": "04a8e15bf5a04bf5def30d3d92272939fc99ad0e",
+      "analyzedHash": "04a8e15bf5a04bf5def30d3d92272939fc99ad0e",
+      "source": "llm",
+      "exports": [
+        "DeltaChip"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/shared/EmptyState.tsx": {
+      "description": "Reusable empty-state view with icon, title, description and optional action button.",
+      "hash": "064d0f93674965c8521cac33d643ac432c0a6100",
+      "describedHash": "064d0f93674965c8521cac33d643ac432c0a6100",
+      "analyzedHash": "064d0f93674965c8521cac33d643ac432c0a6100",
+      "source": "llm",
+      "exports": [
+        "EmptyState"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/shared/FloatingDock.tsx": {
+      "description": "Floating pill-shaped bottom tab bar with icons for the main tabs.",
+      "hash": "6229f0a3562f5f0c67092446be874ef6e6cbaf36",
+      "describedHash": "6229f0a3562f5f0c67092446be874ef6e6cbaf36",
+      "analyzedHash": "6229f0a3562f5f0c67092446be874ef6e6cbaf36",
+      "source": "llm",
+      "exports": [
+        "FloatingDock"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/shared/RingChart.tsx": {
+      "description": "Animated circular progress ring with gradient stroke, centred label and sublabel, themed for light and dark mode.",
+      "hash": "759d3d8e76f2c7eb7de7cbfdb299e0560974a68b",
+      "describedHash": "759d3d8e76f2c7eb7de7cbfdb299e0560974a68b",
+      "analyzedHash": "759d3d8e76f2c7eb7de7cbfdb299e0560974a68b",
+      "source": "llm",
+      "exports": [
+        "RingChart"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/shared/SectionHeader.tsx": {
+      "description": "Row header showing a section title with an optional pressable action link on the right.",
+      "hash": "e202c381b1d0603f9e20bb3efdc3fce8a921352e",
+      "describedHash": "e202c381b1d0603f9e20bb3efdc3fce8a921352e",
+      "analyzedHash": "e202c381b1d0603f9e20bb3efdc3fce8a921352e",
+      "source": "llm",
+      "exports": [
+        "SectionHeader"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/shared/TransactionRow.tsx": {
+      "description": "List row for one transaction, showing category icon, merchant, date, a flagged note, and a signed amount.",
+      "hash": "2c10e7f4c0f0471505a45b1a525cf7441d119ee7",
+      "describedHash": "2c10e7f4c0f0471505a45b1a525cf7441d119ee7",
+      "analyzedHash": "2c10e7f4c0f0471505a45b1a525cf7441d119ee7",
+      "source": "llm",
+      "exports": [
+        "TransactionRow"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/ui/Avatar.tsx": {
+      "description": "Circular user avatar that shows a remote image when a URI is given, otherwise the name's initials.",
+      "hash": "a83b8ff3caa3e93b4b2edfba9fdbbb8c1b9454ac",
+      "describedHash": "a83b8ff3caa3e93b4b2edfba9fdbbb8c1b9454ac",
+      "analyzedHash": "a83b8ff3caa3e93b4b2edfba9fdbbb8c1b9454ac",
+      "source": "llm",
+      "exports": [
+        "Avatar"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/ui/Badge.tsx": {
+      "description": "Small pill-shaped status label with colour tones such as success, warning, danger, info, violet and neutral.",
+      "hash": "7334c55f98a07f0cc1fd2fd032540ea120b9e288",
+      "describedHash": "7334c55f98a07f0cc1fd2fd032540ea120b9e288",
+      "analyzedHash": "7334c55f98a07f0cc1fd2fd032540ea120b9e288",
+      "source": "llm",
+      "exports": [
+        "Badge"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/ui/Button.tsx": {
+      "description": "Pill-shaped pressable button with variants, loading and disabled states, and an optional leading icon.",
+      "hash": "0f44e9d7334f417afe69025035b0d15127750e60",
+      "describedHash": "0f44e9d7334f417afe69025035b0d15127750e60",
+      "analyzedHash": "0f44e9d7334f417afe69025035b0d15127750e60",
+      "source": "llm",
+      "exports": [
+        "Button"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/ui/Card.tsx": {
+      "description": "Rounded themed container with optional glass blur and press handling, used to group content.",
+      "hash": "ba86c230b40f81abbf1b3322aa1c084d0d2f9f9f",
+      "describedHash": "ba86c230b40f81abbf1b3322aa1c084d0d2f9f9f",
+      "analyzedHash": "ba86c230b40f81abbf1b3322aa1c084d0d2f9f9f",
+      "source": "llm",
+      "exports": [
+        "Card"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/ui/Input.tsx": {
+      "description": "Labelled pill text field with optional icon, error state, focus styling and a password visibility toggle.",
+      "hash": "51a117368c0946a6848a50940420415a1765f4af",
+      "describedHash": "51a117368c0946a6848a50940420415a1765f4af",
+      "analyzedHash": "51a117368c0946a6848a50940420415a1765f4af",
+      "source": "llm",
+      "exports": [
+        "Input"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [
+        "Afficher le mot de passe"
+      ],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "components/ui/Skeleton.tsx": {
+      "description": "Pulsing grey placeholder block shown while content loads.",
+      "hash": "ed0bb053fa75fd186f383a71e47758e69b3935e4",
+      "describedHash": "ed0bb053fa75fd186f383a71e47758e69b3935e4",
+      "analyzedHash": "ed0bb053fa75fd186f383a71e47758e69b3935e4",
+      "source": "llm",
+      "exports": [
+        "Skeleton"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "constants/Colors.ts": {
+      "description": "Light and dark colour palettes, the Theme type, and the primary gradient definition.",
+      "hash": "71f2274366eea552ce610f9b6219dd81d3a6adeb",
+      "describedHash": "71f2274366eea552ce610f9b6219dd81d3a6adeb",
+      "analyzedHash": "71f2274366eea552ce610f9b6219dd81d3a6adeb",
+      "source": "llm",
+      "exports": [
+        "Colors",
+        "GRADIENT"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "expo-env.d.ts": {
+      "description": "Auto-generated Expo type reference file; do not edit.",
+      "hash": "d4f8cc7190acbb0ccbd997ce4eed555f3fa381e6",
+      "describedHash": "d4f8cc7190acbb0ccbd997ce4eed555f3fa381e6",
+      "analyzedHash": "d4f8cc7190acbb0ccbd997ce4eed555f3fa381e6",
+      "source": "llm",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "hooks/useTheme.ts": {
+      "description": "Hook returning the active colour theme and dark-mode flag based on the system colour scheme.",
+      "hash": "d2921071cce975b4ac6e36558cb8010acf91e850",
+      "describedHash": "d2921071cce975b4ac6e36558cb8010acf91e850",
+      "analyzedHash": "d2921071cce975b4ac6e36558cb8010acf91e850",
+      "source": "llm",
+      "exports": [
+        "useTheme"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "package.json": {
+      "description": "json file",
+      "hash": "9d7445fcb32fc9280b81461cc35a65425b2c59d0",
+      "describedHash": "9d7445fcb32fc9280b81461cc35a65425b2c59d0",
+      "analyzedHash": "9d7445fcb32fc9280b81461cc35a65425b2c59d0",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.106Z"
+    },
+    "store/mockData.ts": {
+      "description": "Mock seed data for the user, accounts, transactions, budgets, goals, offers and insights.",
+      "hash": "d554003ea8edfe6e23cc9a64993f25e38bab8863",
+      "describedHash": "d554003ea8edfe6e23cc9a64993f25e38bab8863",
+      "analyzedHash": "d554003ea8edfe6e23cc9a64993f25e38bab8863",
+      "source": "llm",
+      "exports": [
+        "USER_ID",
+        "mockUser",
+        "mockProfile",
+        "mockAccounts",
+        "mockCategories",
+        "mockTransactions",
+        "mockBudgets",
+        "mockIncome",
+        "mockGoals",
+        "mockSubscriptions",
+        "mockPartners",
+        "mockOffers",
+        "mockUserOffers",
+        "mockInsights"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "store/useAuthStore.ts": {
+      "description": "Zustand store for authentication state with mocked login, signup, logout and startup initialisation.",
+      "hash": "b0888eef26cd1641b43afc47be518d6390258f5c",
+      "describedHash": "b0888eef26cd1641b43afc47be518d6390258f5c",
+      "analyzedHash": "b0888eef26cd1641b43afc47be518d6390258f5c",
+      "source": "llm",
+      "exports": [
+        "useAuthStore"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "store/useStore.ts": {
+      "description": "Main Zustand store holding financial data and actions for transactions, budgets, goals, offers and settings.",
+      "hash": "4d36335cca8f2ca0c0ec417012fed10d704b3d95",
+      "describedHash": "4d36335cca8f2ca0c0ec417012fed10d704b3d95",
+      "analyzedHash": "4d36335cca8f2ca0c0ec417012fed10d704b3d95",
+      "source": "llm",
+      "exports": [
+        "useStore",
+        "selectors"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "tsconfig.json": {
+      "description": "json file",
+      "hash": "7a8175ce5c7fdd541668ce05a350763b24edc8ec",
+      "describedHash": "7a8175ce5c7fdd541668ce05a350763b24edc8ec",
+      "analyzedHash": "7a8175ce5c7fdd541668ce05a350763b24edc8ec",
+      "source": "static",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:18.164Z"
+    },
+    "types/index.ts": {
+      "description": "Shared TypeScript types and union types for users, accounts, transactions, budgets, goals, offers and subscriptions.",
+      "hash": "80e8dd62c0b42de41291f2a5dd41de218eda85ba",
+      "describedHash": "80e8dd62c0b42de41291f2a5dd41de218eda85ba",
+      "analyzedHash": "80e8dd62c0b42de41291f2a5dd41de218eda85ba",
+      "source": "llm",
+      "exports": [],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    },
+    "utils/format.ts": {
+      "description": "French-locale formatters for euro amounts, signed amounts, dates, and months remaining until a date.",
+      "hash": "fba5ca55d8e25cf389d5f31f6ccb3f0e3b7e06aa",
+      "describedHash": "fba5ca55d8e25cf389d5f31f6ccb3f0e3b7e06aa",
+      "analyzedHash": "fba5ca55d8e25cf389d5f31f6ccb3f0e3b7e06aa",
+      "source": "llm",
+      "exports": [
+        "formatEUR",
+        "formatSigned",
+        "formatDate",
+        "formatShortDate",
+        "formatLongToday",
+        "monthsUntil"
+      ],
+      "imports": [],
+      "tables": [],
+      "labels": [],
+      "route": null,
+      "updatedAt": "2026-10-26T09:04:31.396Z"
+    }
+  },
+  "decisions": [],
+  "knownIssues": [],
+  "designTokens": {
+    "theme": "Glass Finance",
+    "style": "glass-finance",
+    "mood": "calm, precise, premium, data-first",
+    "colors": {
+      "primary": "sky-500",
+      "secondary": "violet-500",
+      "accent": "emerald-500",
+      "background": "gray-50",
+      "primaryHex": "#38bdf8",
+      "secondaryHex": "#8b5cf6",
+      "accentHex": "#10b981",
+      "backgroundHex": "#f5f6fa",
+      "textHex": "#0f172a",
+      "accentUsage": "one-accent",
+      "tileColors": []
+    },
+    "gradients": [
+      "#38bdf8",
+      "#8b5cf6"
+    ],
+    "archetypeId": "glass-finance",
+    "family": "data",
+    "canvasMode": "light",
+    "secondaryScreens": {
+      "detail": "Detail screens open as a white sheet on the gray canvas: one big tabular figure at the top, a segmented range control (1W / 1M / 1Y), a react-native-svg line or ring, then a hairline transaction list.",
+      "list": "Lists are grouped by date with tiny uppercase section labels; rows show an icon in a tinted circle, title, subtitle and a right-aligned tabular amount.",
+      "form": "Forms are single-column with pill inputs and one full-width primary pill button pinned above the keyboard.",
+      "onboarding": "Clean gray canvas with a large KPI card preview (ring + number) as the illustration, two lines of copy, a single primary pill."
+    },
+    "skeleton": [
+      "header-brand-date",
+      "kpi-hero-card",
+      "allocation-chips-rail",
+      "recent-activity-list",
+      "floating-dock"
+    ],
+    "header": "brand-lockup",
+    "hero": "kpi-donut",
+    "navigation": {
+      "style": "floating-pill-tabs",
+      "tabCount": 3,
+      "centerAction": "plus",
+      "labels": true
+    },
+    "surface": {
+      "canvas": "gray-50",
+      "canvasHex": "#f5f6fa",
+      "card": "bg-white/80 rounded-[28px] border border-white/60",
+      "cardHex": "rgba(255,255,255,0.82)",
+      "radius": 28,
+      "shadow": "shadow-sm",
+      "border": "hairline translucent white",
+      "blur": true
+    },
+    "typography": {
+      "display": "text-5xl font-semibold tracking-tight tabular-nums",
+      "heading": "text-lg font-semibold text-slate-900",
+      "body": "text-sm text-slate-600",
+      "label": "text-xs font-medium text-slate-500",
+      "fontStrategy": "system",
+      "notes": "One enormous number per screen. Everything else recedes. Use tabular numerals for money."
+    },
+    "imagery": "icon-only",
+    "avoid": [
+      "No photo hero and no Unsplash background on the home screen.",
+      "No gradient header bar; the gradient lives only inside the ring chart / KPI card.",
+      "No docked full-width tab bar; use a floating pill dock."
+    ]
+  },
+  "dependencies": {},
+  "conversationLog": [
+    {
+      "summary": "Initial generation: project-ff1e35a3 — create an app called MY MIB: \"est une plateforme de gestion financière intelligente qui accompagne l",
+      "timestamp": "2026-10-26T09:04:17.699Z"
+    }
+  ],
+  "turns": [],
+  "preferences": [],
+  "pendingClarification": null,
+  "clarifications": [],
+  "metadata": {
+    "createdAt": "2026-10-26T09:04:17.698Z",
+    "lastUpdated": "2026-10-26T09:04:31.397Z",
+    "projectName": "project-ff1e35a3",
+    "platform": "react-native",
+    "originalPrompt": "create an app called MY MIB: \"est une plateforme de gestion financière intelligente qui accompagne les particuliers, les professionnels et les entreprises dans la maîtrise de leurs finances.Notre mission est de rendre la gestion de l’argent plus simple, plus accessible et plus efficace grâce à des outils de suivi budgétaire, d’analyse des dépenses, de planification financière et de gestion des revenus.Au-delà de la gestion financière, MY MIB aide également ses utilisateurs à réaliser des économi",
+    "generationSummary": "## MY MIB: Finance personnelle et pro (project-ff1e35a3)\n\n**App Type**: finance (personal and business finance management with partner offers)\n**Tech Stack**: Expo SDK ~57.0.28, React Native 0.86.3, Expo Router, Zustand, NativeWind-style classes, built-in Animated API\n\n### Implemented Screens\n- app/index.tsx: splash + 3-slide onboarding (KPI card preview illustration), profile type, income, first envelopes\n- app/(auth)/login.tsx: email/password + biometric unlock, error display\n- app/(auth)/signup.tsx: account creation with validation\n- app/(tabs)/index.tsx: Glass Finance home dashboard (brand lockup, parallax KPI donut hero, allocation chips, insights, recent activity)\n- app/(tabs)/budget.tsx: envelopes, analysis bars, goals, subscriptions\n- app/(tabs)/offers.tsx: partner offers catalogue, categories, activated wallet, cashback\n- app/(tabs)/profile.tsx: profile, plan, security toggles, accounts, export, logout\n- app/transaction/[id].tsx: transaction detail\n- app/goal/[id].tsx: savings goal + 90-day forecast detail\n\n### Key Files & Responsibilities\n- types/index.ts: domain interfaces\n- constants/Colors.ts: Glass Finance palette (light + dark)\n- store/useStore.ts: Zustand finance store (async actions, mock rows)\n- store/useAuthStore.ts: auth store (isInitializing / isSubmitting split)\n- components/ui/*: Button, Card (glass), Input, Badge, Avatar, Skeleton\n- components/shared/*: RingChart (svg), DeltaChip, AllocationChips, FloatingDock, TransactionRow, SectionHeader, EmptyState\n- components/motion/*: ParallaxHeader, CountUp, FadeInView, Pressable scale\n\n### Design Tokens Applied\n- Colors: primary #38bdf8, secondary #8b5cf6, accent #10b981, bg #f5f6fa, text #0f172a\n- Typography: display 48 semibold tabular, heading 18 semibold, body 14, label 12 medium\n- Spacing/Radius: 20pt page padding, 28pt card radius, full pills\n\n### Important Patterns & Conventions\n- Archetype: floating pill dock, no photos, SVG ring hero, glass cards via expo-blur\n- All data access through Zustand async actions; EUR / fr-FR formatting via Intl\n- Animated API only (no reanimated)\n\n### Implemented Features\n- Onboarding, signup, login, biometric unlock, error states\n- KPI hero with donut ring, count-up, parallax tilt\n- Budget envelopes with thresholds, goals, subscriptions, offers, cashback, exports, logout\n\n### How to Run\n```bash\ncd project-ff1e35a3\nnpm install\nnpx expo start\n```"
+  }
+}
